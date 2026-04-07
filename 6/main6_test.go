@@ -30,7 +30,7 @@ func TestGeneratorCloses(t *testing.T) {
     for i := 0; i < 10; i++ {
         _, ok := <-ch
         if !ok {
-            t.Error("channel closed unexpectedly")
+            t.Error("канал закрылся")
         }
     }
 }
